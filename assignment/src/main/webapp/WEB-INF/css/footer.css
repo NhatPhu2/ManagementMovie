@@ -1,0 +1,17 @@
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+.contact{
+   	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    cursor: pointer;
+}
+
+.contact p:hover{
+    text-decoration: underline;
+}

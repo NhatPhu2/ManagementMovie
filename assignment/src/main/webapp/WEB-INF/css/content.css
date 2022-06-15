@@ -1,0 +1,223 @@
+.content-movie .title {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 35px;
+    z-index: 0;
+}
+
+.content-movie{
+	margin-top: 108px;
+}
+
+:root {
+    --slider-padding: 1rem;
+}
+
+.content-movie a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.slider {
+    --items-per-screen: 7;
+    --slider-index: 0;
+    display: flex;
+    flex-grow: 1;
+    width: calc(100% - 2 * var(--slider-padding));
+    max-width: calc(100% - 2 * var(--slider-padding));
+    margin: 0 .2rem;
+    transform: translateX(calc(var(--slider-index)*-100%));
+    transition: transform 1000ms ease-in-out;
+}
+
+.slider .items-movie {
+
+    flex: 0 0 calc(100% / var(--items-per-screen));
+    aspect-ratio: 16/9;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.movie-text>img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.action{
+	display:none;
+	position: absolute;
+	top:-40px;	
+}
+
+.items-movie>img{
+	
+	border-radius: 3px; 
+}
+
+.items-movie{
+	
+	transition: transform 500ms;
+}
+
+.items-movie:hover{
+    transform: scale(1.5) translateX(20px);
+}
+
+.items-movie:hover .action {
+   
+    display: block;
+   
+}
+
+.handle {
+
+  
+    z-index: 10;
+    margin: .2rem 0px;
+    flex-grow: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+    display: flex;
+    font-size: 10rem;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    transition: transform 150ms ease-in-out;
+    text-align: center;
+
+}
+
+.handle:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.left-handle {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 120px;
+    margin-top: 5px;
+  padding: 0px 32px;
+
+}
+
+
+.right-handle {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 120px;
+    margin-top: 5px;
+    padding: 0px 32px;
+    margin-left: -70px;
+}
+
+.handle:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left-handle:hover {
+    content: \2039;
+}
+
+.handle:hover::after {
+    color: white;
+}
+
+.right-handle:hover {
+    content: \2039;
+}
+
+.list-film {
+ margin-bottom: 20px;	
+	
+}
+
+
+
+.progress-bar {
+    display: flex;
+    gap: .5rem;
+    margin-right: 100px;
+    align-items: center;
+     z-index: 0;
+}
+
+.progress-item {
+    flex: 0 0 1rem;
+    height: .3rem;
+    background-color: gray;
+}
+
+.progress-item.active {
+    background-color: white;
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-left: 8px;
+}
+
+@media(max-width: 1000px) {
+    .slider {
+        --items-per-screen: 3;
+    }
+}
+
+.action>button {
+  border: none;
+  background-color: rgba(0,0,0,0);
+  
+}
+
+.action .right-font{
+	display: block;
+	position:relative;
+	right: -190px;
+	top: 28px;
+	margin-bottom: 10px;	
+}
+
+
+
+.play-button{
+	position: relative;
+    top: 92px;
+}
+
+.content-movie .title-movie{
+	 font-family: Arial, Helvetica, sans-serif;
+	 color: white;
+	 font-weight: lighter;
+	 top: 119px;
+     left: 7px;
+     position: relative;
+}
+
+.action>.fa-solid {
+   	border:none;
+    cursor: pointer;
+    font-size: 20px;
+   
+}
+
+.action button:hover .fa-solid {
+ 	cursor:pointer;
+    color: white;
+}

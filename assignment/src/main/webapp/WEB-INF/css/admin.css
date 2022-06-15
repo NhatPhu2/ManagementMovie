@@ -1,0 +1,65 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+	border-radius: 12px 12px 0 0;
+	overflow: hidden;
+	margin-top: 65px;
+}
+
+td {
+	height: 50px;
+	text-align: center;
+}
+
+th {
+	background-color: #ba68c8;
+	color: #fafafa;
+	font-family: 'Open Sans', Sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+tr {
+	width: 100%;
+	background-color: #fafafa;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.action {
+	display: inline-block;
+	width: 127px;
+}
+
+.action button {
+	border: none;
+	background-color: orange;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+}
+
+.direction {
+	text-align: center;
+}
+
+.direction button {
+	border: none;
+	background-color: orange;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+}
+
+.insert {
+	border: none;
+	background-color: orange;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+}

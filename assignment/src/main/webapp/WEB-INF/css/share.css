@@ -1,0 +1,65 @@
+.modalshare{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10,10,10,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+	z-index: 100;
+	animation: modalFadeIn ease .5s;
+}
+
+.showshare{
+	display: flex;
+}
+
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+#modalshare-header{
+
+    font-size: 30px;
+
+}
+
+.modalshare-container{
+width: 450px;
+min-height: 144px;
+background-color:white;
+border-radius: 0px;
+}
+
+input[type="text"]{
+    padding: 7px;
+    border-radius: 0px;
+    border: 0.5px solid gray;
+    width: 290px;
+}
+
+.ct{
+text-align: center;
+}
+
+.btn-share{
+    padding: 7px;
+    background-color: orange;
+    cursor: pointer;
+    float: right;
+    margin-right: 72px;
+    margin-top: 12px;
+}

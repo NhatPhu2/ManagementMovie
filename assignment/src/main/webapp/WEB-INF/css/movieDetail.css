@@ -1,0 +1,139 @@
+.modal{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10,10,10,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+	z-index: 100;
+	animation: modalFadeIn ease .5s;
+}
+
+.show{
+	display: flex;
+}
+
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.modal-container{
+	background-color:#141414;
+	width: 850px;
+    max-width: calc(100% - 32px);
+    min-height: 706px;
+    border-radius:5px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+
+.modal-body{
+	color: white;
+}
+
+
+.images{
+	position: relative;
+    height: 480px;
+    width: 850px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-size: cover; background-repeat: no;
+
+}
+
+#modal-header{
+
+    font-size: 30px;
+
+}
+
+.modal-right{
+	color: gray;
+	font-size: 13px;
+	font-weight: lighter;
+	width: 24%;
+    display: inline-block;
+}
+
+.modal-left{
+	float:left;
+	margin-left: 50px;
+	width: 58%;
+
+}
+
+.time-movie{
+	display: inline-block;
+	
+}
+
+.time-release{
+	margin-top: 10px;
+}
+
+.description p{
+	margin-top: 20px;
+	width: 80%;
+}
+
+.font-button{
+	display: inline-block;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+}
+
+.action-button{
+	position: absolute;
+	bottom: 265px;
+    left: 42px;
+    cursor: pointer;
+}
+ 
+.detail-button{
+	font-size: 30px;
+}
+
+.fa-circle-xmark.close{
+	position: absolute;
+    top: 10px;
+    right: 7px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.play-detail{
+	background-color: white;
+    padding:9px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.play-detail:hover{
+	opacity: 0.9;
+}
+
+span{
+	font-size: 17px;
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif; 
+	text-align: center;
+	height: 35px;
+    margin-left: 5px;
+}
